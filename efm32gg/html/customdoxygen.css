@@ -571,7 +571,16 @@ dl.bug
     background: url('silicon-labs-logo.png') no-repeat;
     background-size: 150px;
 }
-    
+
+#projectname.smaller
+{
+	font: 100% "Open Sans",sans-serif;
+	margin: 0 0 0 10px;
+	padding: 10px 0px 10px 70px;
+    background: url('silicon-labs-logo.png') no-repeat;
+    background-size: 50px;
+}
+
 #projectbrief
 {
 	font: 120% "Open Sans",sans-serif;
@@ -596,12 +605,26 @@ dl.bug
 	border-bottom: none;
 }
 
+#titlearea.smaller
+{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 40px;
+	overflow: hidden;
+	border-bottom: none;
+}
+
 #titlearea table {
 	width: 100%;
 }
 
 #titlearea tr {
 	height: 120px !important;
+}
+
+#titlearea.smaller tr {
+	height: 40px !important;
 }
 
 div.zoom
