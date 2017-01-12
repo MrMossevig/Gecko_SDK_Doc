@@ -22,6 +22,21 @@
 <script type="text/javascript">
   $(document).ready(function() { init_search(); });
 </script>
+<script type="text/javascript">
+$(document).ready(function(){
+ $("#doc-content").scroll( function(){
+  if ($("#doc-content").scrollTop() > 50) {
+   $("#projectname").addClass("smaller");
+   $("#titlearea").addClass("smaller");
+   resizeHeight();
+  } else {
+   $("#projectname").removeClass("smaller");
+   $("#titlearea").removeClass("smaller");
+   resizeHeight();
+  }
+ });
+});
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
